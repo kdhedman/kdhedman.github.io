@@ -1,0 +1,98 @@
+@import url("./normalize.css");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Source+Serif+Pro&display=swap");
+/**
+2b2d42 mörkgrå
+8d99ae grå
+edf2f4 ljusgrå
+ef233c klarröd
+d90429 mörkröd
+**/
+
+:root {
+  --main-bg-color: #2b2d42;
+  --main-bg-color2: #8d99ae;
+  --main-text-color: #edf2f4;
+  --main-accent-color: #d90429;
+  --main-accent-color2: #ef233c;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 800px;
+  margin: 0;
+  padding: 0;
+  background-color: #2b2d42;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #edf2f4;
+}
+
+h1 {
+  font-family: "Source Serif Pro", serif;
+  padding-left: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-bg-color);
+}
+
+a:hover {
+  color: #ef233c;
+  border: 1px;
+  box-shadow: inset 0px 0px 0px 1px var(--main-bg-color);
+  transition: 0.5s;
+}
+
+img {
+  border-radius: 10%;
+}
+
+nav {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: inline;
+  overflow: hidden;
+  background-color: #8d99ae;
+}
+
+nav a {
+  list-style-type: none;
+  float: left;
+  display: block;
+  padding: 15px;
+}
+
+main {
+  display: block;
+  text-align: center;
+  max-width: 800px;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, 0%);
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  padding-bottom: 10px;
+  background-color: var(--main-bg-color);
+  float: right;
+}
+
+footer a {
+  color: #edf2f4;
+}
+
+.title {
+  font-size: 1.5em;
+  position: relative;
+  top: 70px;
+}

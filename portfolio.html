@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- 
+    Portfolio (spara filen som portfolio.html)
+• Presentera några av dina tidigare projekt i en lista.
+• Lägg till några skärmbilder på dina projekt.
+Spara bilderna i mappen images.
+• Skapa en länk till din GitHub-sida (eller LinkedIn).
+Länken måste öppnas i en ny flik.
+Formatera länken med CSS (valfri formatering).
+-->
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>David Hedmans Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">Hem</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a style="float: right" href="contact.html">Kontakt</a>
+    </nav>
+    <main></main>
+    <footer>
+      <hr />
+      <p>
+        Copyright &copy; 2021 – David Hedman –
+        <a style="color: #edf2f4" id="contact-mail" href="#"></a>
+        <script>
+          var m;
+          m = "dav";
+          m += "id.hed";
+          m += "man@yh.";
+          m += "nack";
+          m += "ade";
+          m += "min.c";
+          m += "om";
+          $ele = document.getElementById("contact-mail");
+          $ele.href = "mailto:" + m;
+          $ele.innerHTML = m;
+        </script>
+      </p>
+    </footer>
+  </body>
+</html>

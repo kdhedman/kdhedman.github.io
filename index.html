@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!--
+    Startsida (spara filen som index.html)
+• Skriv ditt namn som huvudrubrik (h1).
+Formatera ditt namn med en valfri ”Google Font”.
+Ändra även färg och teckenstorlek.
+• Visa en bild på dig själv under ditt namn.
+Spara bilden i en undermapp som heter images
+• Skriv lite om dig själv under bilden i ett stycke (valfri formatering med CSS)
+-->
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>David Hedmans Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .photo {
+        position: relative;
+        top: 90px;
+        float: right;
+        padding-right: 20px;
+        margin-left: 20px;
+      }
+      .info {
+        position: relative;
+        top: 90px;
+        padding-left: 25px;
+        padding-right: 250px;
+        width: auto;
+      }
+      .courses {
+        position: relative;
+        top: 20px;
+        float: right;
+      }
+      .courses ul {
+        position: relative;
+        list-style-type: none;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">Hem</a>
+
+      <a href="portfolio.html">Portfolio</a>
+
+      <a style="float: right" href="contact.html">Kontakt</a>
+    </nav>
+    <main>
+      <div class="title">
+        <h1>David Hedman</h1>
+      </div>
+      <div class="photo">
+        <img
+          style="width: 200px"
+          src="img/photo.jpg"
+          alt="Photo of David Hedman"
+        />
+      </div>
+      <div class="info">
+        <p>Studerar JavaUtvecklare på Nackademin i Solna, Stockholm.</p>
+        <p>En</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque illum
+          aliquam nihil repellat, quo reiciendis distinctio, dolorem ipsum
+          veniam impedit accusamus expedita dolore itaque! Quasi, itaque dolores
+          voluptates deserunt est, sequi qui quisquam voluptatum doloremque
+          veniam maiores unde sapiente odit officia doloribus. Laborum facilis
+          voluptate aut quis dolor molestias voluptatum placeat error dicta! Quo
+          unde animi facere velit dolor laborum, voluptatibus accusantium!
+          Dolorem culpa ex quidem, voluptas eveniet aut harum dolores. Magni
+          labore voluptates eligendi aliquam eius nemo aliquid atque accusamus
+          necessitatibus aspernatur consectetur nostrum fugiat distinctio
+          doloribus hic, soluta quod maiores? Voluptatum laboriosam dignissimos
+          eligendi soluta reprehenderit! Nesciunt, odit!
+        </p>
+      </div>
+      <div class="courses">
+        <h4>Avslutade kurser</h4>
+        <ul>
+          <li>Databashantering (MySQL)</li>
+          <li>Funktionell Programering (Kotlin)</li>
+          <li>Java Grundkurs</li>
+          <li>OOP</li>
+          <li>Systemdesign</li>
+        </ul>
+      </div>
+    </main>
+    <footer>
+      <hr />
+      <p>
+        Copyright &copy; 2021 – David Hedman –
+        <a id="contact-mail" href="#"></a>
+        <script>
+          var m;
+          m = "dav";
+          m += "id.hed";
+          m += "man@yh.";
+          m += "nack";
+          m += "ade";
+          m += "min.c";
+          m += "om";
+          $ele = document.getElementById("contact-mail");
+          $ele.href = "mailto:" + m;
+          $ele.innerHTML = m;
+        </script>
+      </p>
+    </footer>
+  </body>
+</html>
